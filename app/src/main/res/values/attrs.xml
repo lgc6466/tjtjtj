@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="gradient1" format="reference" />
+    <attr name="week_bg" format="reference" />
+    <attr name="year_bg" format="reference" />
+    <attr name="emtion_bg" format="reference" />
+    <attr name="popupbg" format="reference" />
+</resources>

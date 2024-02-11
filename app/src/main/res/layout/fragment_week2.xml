@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/gradient1"
+    tools:context=".WeekPage.Week2Fragment">
+
+    <com.example.todoido.AnimeView.FlowerView
+        android:id="@+id/flowerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+    <com.example.todoido.AnimeView.RainView
+        android:id="@+id/rainView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+    <com.example.todoido.AnimeView.LeaveView
+        android:id="@+id/leaveView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+    <com.example.todoido.AnimeView.SnowView
+        android:id="@+id/snowView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/week2_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/post"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/week2_prev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/prev" />
+
+            <TextView
+                android:id="@+id/text_week2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2주차"
+                android:textSize="25dp"
+                android:textColor="@color/selected_tab_text_color"/>
+
+            <ImageButton
+                android:id="@+id/week2_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/next"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/post"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:layout_centerInParent="true"
+            android:background="?attr/week_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/title_wrap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/wktxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="목표달성률"
+                        android:textColor="@color/selected_tab_text_color" />
+
+                    <ImageView
+                        android:id="@+id/mainImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/wktxt"
+                        android:layout_centerInParent="true"
+                        android:background="?attr/emtion_bg"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_happy" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/weekrecyclerView"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:scrollbars="vertical" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

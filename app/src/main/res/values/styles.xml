@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">#F4E87A</item>
+    </style>
+
+    <style name="CustomTimePickerTheme" parent="ThemeOverlay.MaterialComponents.TimePicker">
+        <item name="colorOnSurface">@color/selected_tab_text_color</item>
+        <item name="colorPrimary">@color/orange</item>
+        <item name="fontFamily">@font/nanumsquare_acb</item>
+    </style>
+
+    <style name="YourTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:fontFamily">@font/nanumsquare_acb</item>
+    </style>
+
+    <style name="FullScreenDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/FFFFFF</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+    <style name="DialogAnimation" parent="android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="Theme1" parent="Base.Theme.Todoido">
+        <item name="gradient1">@drawable/gradient_background</item>
+        <item name="week_bg">@drawable/weekbg</item>
+        <item name="year_bg">@drawable/yearbg</item>
+        <item name="emtion_bg">@drawable/emtionbg</item>
+        <item name="popupbg">@drawable/popup_bg</item>
+    </style>
+
+    <style name="Theme2" parent="Base.Theme.Todoido">
+        <item name="gradient1">@drawable/gradient_background2</item>
+        <item name="week_bg">@drawable/weekbg2</item>
+        <item name="year_bg">@drawable/yearbg2</item>
+        <item name="emtion_bg">@drawable/emtionbg2</item>
+        <item name="popupbg">@drawable/popup_bg2</item>
+    </style>
+
+    <style name="Theme3" parent="Base.Theme.Todoido">
+        <item name="gradient1">@drawable/gradient_background3</item>
+        <item name="week_bg">@drawable/weekbg3</item>
+        <item name="year_bg">@drawable/yearbg3</item>
+        <item name="emtion_bg">@drawable/emtionbg3</item>
+        <item name="popupbg">@drawable/popup_bg3</item>
+    </style>
+
+
+
+
+</resources>

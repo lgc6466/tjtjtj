@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:src="@drawable/logo2"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="SING UP"
+                android:textColor="#72634A"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/name_cardview"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:text="이름"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#72634A"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="12dp"
+                        android:background="@android:color/transparent" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/id_cardview"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:text="아이디"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="#72634A"
+                    />
+
+                <EditText
+                    android:id="@+id/et_id"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp"
+                    android:background="@android:color/transparent" />
+
+            </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/pw_cardview"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:text="비밀번호"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#72634A"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_pass"
+                        android:layout_width="170dp"
+                        android:layout_height="35dp"
+                        android:hint="영문, 숫자, 특수문자 포함 6자 이상"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:ems="10"
+                        android:textColorHint="#FFE4CC"
+                        android:inputType="textPassword"
+                        android:background="@android:color/transparent"
+                        android:textSize="12dp"/>
+
+                    <ImageButton
+                        android:id="@+id/eye"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/eyeoff" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/pw2_cardview"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:text="비밀번호 확인"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#72634A"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_pass2"
+                        android:layout_width="140dp"
+                        android:layout_height="35dp"
+                        android:hint="비밀번호를 재입력하세요"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:ems="10"
+                        android:textColorHint="#FFE4CC"
+                        android:inputType="textPassword"
+                        android:background="@android:color/transparent"
+                        android:textSize="12dp"/>
+
+                    <ImageButton
+                        android:id="@+id/eye2"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/eyeoff" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/em_cardview"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:text="E-mail"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#72634A"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:layout_width="195dp"
+                        android:layout_height="35dp"
+                        android:ems="10"
+                        android:hint="이메일을 입력하세요"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:inputType="textPersonName"
+                        android:textColorHint="#FFE4CC"
+                        android:background="@android:color/transparent"
+                        android:textSize="12dp"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttonbox"
+                android:textColor="#72634A"
+                android:text="가입하기"
+                android:textSize="14dp"
+                android:elevation="10dp"
+                android:textStyle="bold"
+                android:padding="0dp"
+               />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/sheet_day"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@drawable/rounder"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="30dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--app:behavior_peekHeight="30dp"-->
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center|top"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baseline_remove_24"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="오늘의 새로운 일!"
+                android:textAlignment="center"
+                android:textSize="17dp"
+                android:padding="5dp"
+                android:textColor="@color/selected_tab_text_color"
+                android:fontFamily="@font/nanumsquare_acb"/>
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/timePickerButton"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    app:icon="@drawable/clock_ic"
+                    app:iconGravity="textStart"
+                    app:iconTint="@color/gray_"
+                    android:text="시작 시간"
+                    android:fontFamily="@font/nanumsquare_acb"
+                    android:textColor="@color/gray_"
+                    app:cornerRadius="20dp"
+                    app:elevation="4dp"
+                    app:strokeColor="@color/yellow_border"
+                    app:strokeWidth="1dp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/timePickerButton2"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end"
+                    app:icon="@drawable/clock_ic"
+                    app:iconGravity="textStart"
+                    app:iconTint="@color/gray_"
+                    android:fontFamily="@font/nanumsquare_acb"
+                    android:text="종료 시간"
+                    android:textColor="@color/gray_"
+                    app:cornerRadius="20dp"
+                    app:elevation="4dp"
+                    app:strokeColor="@color/yellow_border"
+                    app:strokeWidth="1dp" />
+
+            </LinearLayout>
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/rectangle_3"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:elevation="4dp"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:strokeColor="@color/yellow_border"
+                app:strokeWidth="1dp">
+
+                <EditText
+                    android:id="@+id/day_txt"
+                    android:layout_width="290dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:hint="내용을 입력하세요"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textColor="#5B4F3B"
+                    android:textColorHint="#BF7C7C7C" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="알림설정"
+                android:textAlignment="center"
+                android:textSize="17dp"
+                android:padding="5dp"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/selected_tab_text_color"
+                android:fontFamily="@font/nanumsquare_acb"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center">
+                
+                <CheckBox
+                    android:id="@+id/smart_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/orange"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="스마트 알림설정"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:padding="5dp"
+                    android:textColor="@color/selected_tab_text_color"
+                    android:fontFamily="@font/nanumsquare_acb"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/clock_ic"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:text="입력하기"
+                android:fontFamily="@font/nanumsquare_acb"
+                android:textColor="@color/selected_tab_text_color"/>
+
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

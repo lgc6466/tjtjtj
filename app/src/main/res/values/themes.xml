@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Todoido" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/F4E87A</item>
+        <item name="android:fontFamily">@font/nanumsquare_acr</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="gradient1">@drawable/gradient_background</item>
+        <item name="week_bg">@drawable/weekbg</item>
+        <item name="year_bg">@drawable/yearbg</item>
+        <item name="emtion_bg">@drawable/emtionbg</item>
+        <item name="popupbg">@drawable/popup_bg</item>
+
+    </style>
+
+    <style name="Theme.Todoido" parent="Base.Theme.Todoido" />
+</resources>

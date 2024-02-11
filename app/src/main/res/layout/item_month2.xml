@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:background="#00000000"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="430dp"
+        android:background="@drawable/month2"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="430dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/picupdate"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="35dp">
+
+            <ImageView
+                android:id="@+id/monthpic"
+                android:layout_width="210dp"
+                android:layout_height="215dp"
+                android:background="@drawable/black_background" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/gallerybtn"
+                android:padding="3dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gallery"
+                android:background="@drawable/gallery_background"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="210dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="#2DC714" />
+
+        <EditText
+            android:id="@+id/contentEditText"
+            android:layout_width="200dp"
+            android:layout_height="140dp"
+            android:layout_below="@+id/picupdate"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:hint="내용"
+            android:maxLines="5"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/closeButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="215dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/monthclose2" />
+
+</RelativeLayout>
